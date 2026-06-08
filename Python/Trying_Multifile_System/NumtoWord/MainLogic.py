@@ -8,6 +8,8 @@ def logic(num):
         return hundreds(num)
     if 1000 <= num <= 999999:
         return thousands(num)
+    if 1000000 <= num <= 999999999:
+        return millions(num)
 
 
 def ones(num):
@@ -21,3 +23,5 @@ def hundreds(num):
 def thousands(num):
     return logic(num//1000) + " thousand " + logic(num % 1000)
 
+def millions(num):
+    return logic(num//1000000) + " million " + logic(num % 1000000)
