@@ -136,3 +136,12 @@ y_pred, _, _ = predict(X_test, W1, W2, b1, b2)
 loss  = loss_calc(y_pred,y_test)
 
 print("The Testing results are:\n Loss: ",loss)
+
+np.savez("house_model.npz",
+         W1 = W1,
+         W2 = W2,
+         b1 = b1,
+         b2 = b2,
+         X_min = X_min,
+         X_max = X_max
+         )
