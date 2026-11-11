@@ -23,7 +23,7 @@ b2 = np.zeros((1,1))
 
 # Training settings
 lr = 0.1
-epochs = 10000
+epochs = 5000
 
 
 # Rectified Linear Unit
